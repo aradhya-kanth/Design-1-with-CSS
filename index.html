@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Design with CSS 1 </title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      const e = document.getElementById("myLinks");
+      let flag = false;
+      function myfunction() {
+        if (e.style.display == 'none'){
+          e.style.display = "block";
+          flag = true;
+        }
+        else {
+          e.style.display = "none";
+          flag = false;
+        }
+      }
+      function menuVisibility(){
+        if (window.innerWidth <= 400) {
+              e.style.display = Boolean(flag)? 'block' : 'none';
+          } else {
+              e.style.display = 'none';
+          }
+      }
+    </script>
+  </head>
+  <body onresize='menuVisibility()'>
+    <header id="heading">
+      <div class="logo" >
+        <a href="#" >Design</a>
+      </div>
+      <div class="navbar">
+        <a href="#" >HOME</a>
+        <a href="#" >BLOG</a>
+        <a href="#" >PORTFOLIO</a>
+      </div>
+      <div class="menu-icon" onclick="myfunction()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="myLinks">
+        <a href="#" >HOME</a>
+        <a href="#" >BLOG</a>
+        <a href="#" >PORTFOLIO</a>
+      </div>
+    </header>
+    <main>
+      <div id="main-container">
+        <h1>I Can Change Everything</h1>
+      </div>
+      <div id="container-2">
+        <img src="https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGltYWdlfGVufDB8fDB8fHww">
+      </div>
+    </main>
+    <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("heading");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+  </body>
+</html>
