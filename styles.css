@@ -37,7 +37,7 @@ header {
 header .menu-icon {
   display: none;
 }
-header .menu-icon div {
+header .menu-icon div{
   width: 20px;
   height: 3px;
   background-color: white;
@@ -47,7 +47,7 @@ header #myLinks {
   display: none;
   width: 100%;
 }
-header #myLinks a {
+header #myLinks a{
   display: block;
   text-decoration: none;
   color: white;
@@ -58,7 +58,7 @@ header #myLinks a:hover {
   color: black;
   background-color: #ddd;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   header {
     flex-direction: column;
   }
@@ -74,7 +74,7 @@ header #myLinks a:hover {
     align-items: stretch;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .navbar {
     display: none;
   }
@@ -84,7 +84,7 @@ header #myLinks a:hover {
   .logo {
     text-align: justify;
     padding-left: 8px;
-    flex: 90%;
+    flex: 90%
   }
   header .menu-icon {
     display: block;
@@ -97,12 +97,12 @@ header #myLinks a:hover {
   height: 500px;
 }
 h1 {
-  color: #e6e6fa;
+  color: #E6E6FA;
   font-size: 60px;
   text-align: center;
   padding-top: 200px;
 }
-#container-2 img {
+#container-2 img{
   width: 100%;
   max-height: 100%;
 }
