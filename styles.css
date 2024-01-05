@@ -58,7 +58,7 @@ header #myLinks a:hover {
   color: black;
   background-color: #ddd;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   header {
     flex-direction: column;
   }
@@ -74,7 +74,7 @@ header #myLinks a:hover {
     align-items: stretch;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .navbar {
     display: none;
   }
